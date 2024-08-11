@@ -22,8 +22,7 @@
             "resources": [
                 "assets/audio.mp3",
                 "assets/fredbear.gif",
-                "assets/static.gif",
-                "assets/checker.mp3"
+                "assets/static.gif"
             ],
             "matches": ["<all_urls>"]
         }
