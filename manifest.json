@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "fredy faber",
+    "version": "1.0",
+    "description": "at least they didn’t give birth to… freddy fazbear, because, if you give birth to, freddy fivebears, he comes out and he says “or, or, or or, or, or, or or, or or, and then he kills michael afton, or he tries to do it, along with his friends, bunny the bonnie, chica the kitchen, foxy the… fox pirate rawr, and yellow freddy, who’s yellow, and weird, and, but it’s not their fault! it’s all because william afton one day was like “hi i’m gonna murder people, ra!” so he murdered kids, but he was also a yellow bunny? and he was like “hi, i’m a yellow bunny, imma kill you” because he had a daughter? who had, like, remnant? gone from her? so he was like, “if i kill kids, i put them in the suits, so that it’s not, it’s not freddy fivebear fault, its actually purple guy fault” and that’s why you don’t give birth to him.",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+      },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["main.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/audio.mp3",
+                "assets/fredbear.gif",
+                "assets/static.gif",
+                "assets/checker.mp3"
+            ],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
